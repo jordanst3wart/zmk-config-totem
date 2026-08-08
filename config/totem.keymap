@@ -28,14 +28,14 @@
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   SHIFT   ┃    TAB    ┃ ENTER(1)  ┃   ┃  SPC(2)   ┃   BSPC    ┃   DELETE  ┃
+//                                     ┃   TAB     ┃  LSHIFT   ┃ ENTER(1)  ┃   ┃  SPC(2)   ┃   BSPC    ┃   DELETE  ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
         base {
             bindings = <
          &kp Q  &kp W  &kp E   &kp R  &kp T    &kp Y                  &kp U    &kp I          &kp O    &kp P
          &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHIFT F  &kp G    &kp H    &mt RSHIFT J    &mt RCTRL K &mt RALT L &mt RGUI SEMI
 &kp ESC  &kp Z  &kp X  &kp C   &kp V  &kp B    &kp N                  &kp M    &kp COMMA      &kp DOT  &kp FSLH  &kp APOS
-                       &kp LSHIFT  &kp TAB    &lt NAV ENTER           &lt SYM SPACE  &kp BSPC  &kp DELETE
+                       &kp TAB  &kp LSHIFT    &lt NAV ENTER           &lt SYM SPACE  &kp BSPC  &kp DELETE
             >;
         };
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
