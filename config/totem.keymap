@@ -24,7 +24,7 @@
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   A(GUI)  ┃   S(ALT)  ┃  D(CTRL)  ┃  F(SHFT)  ┃     G     ┃   ┃     H     ┃  J(SHFT)  ┃ K(CTRL)   ┃  L(ALT)   ┃   ;(GUI)  ┃
+//             ┃   A(GUI)  ┃   S(ALT)  ┃  D(CTRL)  ┃  F        ┃     G     ┃   ┃     H     ┃  J        ┃ K(CTRL)   ┃  L(ALT)   ┃   ;(GUI)  ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -33,7 +33,7 @@
         base {
             bindings = <
          &kp Q  &kp W  &kp E   &kp R  &kp T    &kp Y                  &kp U    &kp I          &kp O    &kp P
-         &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHIFT F  &kp G    &kp H    &mt RSHIFT J    &mt RCTRL K &mt RALT L &mt RGUI SEMI
+         &mt LGUI A  &mt LALT S  &mt LCTRL D   &kp F  &kp G           &kp H    &kp J    &mt RCTRL K &mt RALT L &mt RGUI SEMI
 &kp ESC  &kp Z  &kp X  &kp C   &kp V  &kp B    &kp N                  &kp M    &kp COMMA      &kp DOT  &kp FSLH  &kp APOS
                        &kp TAB  &kp LSHIFT    &lt NAV ENTER           &lt SYM SPACE  &kp BSPC  &kp DELETE
             >;
@@ -50,7 +50,7 @@
         nav_num {
             bindings = <
        &kp PG_UP  &kp HOME    &kp UP     &kp END     &kp LBRC  &kp RBRC  &kp N7    &kp N8    &kp N9  &kp KP_PLUS
-       &mt LGUI PG_DN  &mt LALT LEFT    &mt LCTRL DOWN   &mt LSHIFT RIGHT   &kp LPAR  &kp RPAR  &kp N4    &kp N5    &kp N6  &kp KP_MINUS
+       &mt LGUI PG_DN  &kp LEFT    &kp DOWN  &kp RIGHT   &kp LPAR  &kp RPAR  &kp N4    &kp N5    &kp N6  &kp KP_MINUS
 &trans &trans     &trans      &trans     &trans      &kp LBKT  &kp RBKT  &kp N1    &kp N2    &kp N3  &kp N0  &trans
                                          &trans      &trans    &trans    &trans   &trans  &trans
             >;
@@ -59,7 +59,7 @@
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     _     ┃     =     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     `     ┃     ~     ┃    BRI+   ┃    VOL+   ┃  PLAY     ┃   ┃           ┃     \     ┃     |     ┃           ┃           ┃
+//             ┃           ┃           ┃    BRI+   ┃    VOL+   ┃  PLAY     ┃   ┃           ┃     \     ┃     |     ┃      `    ┃     ~     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃    BRI-   ┃    VOL-   ┃  PAUSE    ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -68,7 +68,7 @@
         sim_layer {
             bindings = <
                 &kp EXCL &kp AT &kp HASH      &kp DLLR    &kp PRCNT     &kp CARET   &kp AMPS    &kp KP_MULTIPLY   &kp UNDERSCORE &kp KP_EQUAL
-                &trans   &trans &kp C_BRI_UP  &kp C_VOL_UP      &kp C_PLAY    &trans  &kp BACKSLASH   &kp PIPE &trans   &trans
+                &trans   &trans &kp C_BRI_UP  &kp C_VOL_UP      &kp C_PLAY    &trans  &kp BACKSLASH   &kp PIPE &kp GRAVE &kp TILDE
     &trans      &trans   &trans &kp C_BRI_DN  &kp C_VOL_DN      &kp C_PAUSE   &trans  &trans          &trans   &trans   &trans   &trans
                                         &trans      &trans    &trans          &trans      &trans    &trans
             >;
